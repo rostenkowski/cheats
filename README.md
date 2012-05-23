@@ -1,0 +1,4 @@
+cheats
+======
+
+Linux Admin Cheats
