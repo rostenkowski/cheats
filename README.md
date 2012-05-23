@@ -1,7 +1,3 @@
-cheats
-======
-
-Linux Admin Cheats
 
 Export MySQL database:
 
