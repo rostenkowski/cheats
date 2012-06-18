@@ -1,4 +1,4 @@
-Install PostgreSQL, create the super-user, create project database and regular user and grant privileges:
+Install PostgreSQL, create project database and a user and grant privileges to that user:
 
 ```bash
 $ whoami 
@@ -6,7 +6,7 @@ joe
 $ sudo apt-get install postgresql
 $ sudo su postgres
 $ psql
-CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER;
+CREATE USER joe WITH PASSWORD '*****' CREATEDB CREATEUSER;
 \q
 $ exit
 $ psql  
