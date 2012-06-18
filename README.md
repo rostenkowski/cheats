@@ -1,4 +1,4 @@
-Create PostgreSQL super-user, create database and regular user and grant privileges to the regular user:
+Install PostgreSQL, create the super-user, create project database and regular user and grant privileges:
 
 ```bash
 $ whoami 
