@@ -20,13 +20,16 @@ GRANT ALL ON DATABASE project TO project;
 \q
 ```
 
-Export MySQL database:
+MySQL
+-----
+
+Export database:
 
 ```bash
 mysqldump -uroot -p database >> database.sql
 ```
 
-Import MySQL database:
+Import database:
 
 ```bash
 mysql -uroot -p -Ddatabase < database.sql
