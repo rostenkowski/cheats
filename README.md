@@ -1,10 +1,18 @@
-Create PostgreSQL user:
+Create PostgreSQL super-user, create database and regular user and grant privileges to the regular user:
 
 ```bash
-sudo su postgres
-psql
-CREATE USER root WITH PASSWORD '*****';
-GRANT ALL PRIVILEGES ON database TO root; -- WITH ADMIN OPTION to create super-user
+$ whoami 
+joe
+$ sudo apt-get install postgresql
+$ sudo su postgres
+$ psql
+CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER;
+\q
+$ exit
+$ psql  
+CREATE DATABASE project;
+GRANT ALL ON DATABASE project TO joe;
+\q
 ```
 
 Export MySQL database:
