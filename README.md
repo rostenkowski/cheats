@@ -1,10 +1,10 @@
-
 Create PostgreSQL user:
 
 ```bash
 sudo su postgres
 psql
-CREATE USER david WITH PASSWORD '*****';
+CREATE USER root WITH PASSWORD '*****';
+GRANT ALL PRIVILEGES ON database TO root; -- WITH ADMIN OPTION to create super-user
 ```
 
 Export MySQL database:
