@@ -3,12 +3,12 @@ PostgreSQL
 
 How to:
 
-- Install the PostgreSQL database server and client.
-- Login as the super-user.
-- Create an admin account.
-- Login as the admin-user.
-- Create the project-database and the project-user.
-- Grant all privileges on the project-database to the project-user.
+1. Install the PostgreSQL database server and client.
+2. Login as the super-user.
+3. Create an admin account.
+4. Login as the admin-user.
+5. Create the project-database and the project-user.
+6. Grant all privileges on the project-database to the project-user.
 
 ```bash
 $ whoami 
