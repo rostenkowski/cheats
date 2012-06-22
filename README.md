@@ -1,5 +1,7 @@
-PostgreSQL HOWTO
-----------------
+PostgreSQL
+----------
+
+How to:
 
 * install the PostgreSQL database server and client
 * login as the super-user
