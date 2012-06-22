@@ -2,7 +2,7 @@ PostgreSQL
 ----------
 
 How to install the PostgreSQL database, login as the super-user, create an admin account, login as the admin and 
-create project database and user and grant all privileges on the project database to the that user.
+create project database and user and grant all privileges on the project database to the project user.
 
 ```bash
 $ whoami 
