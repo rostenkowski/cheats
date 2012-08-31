@@ -34,13 +34,13 @@ psql -d database < file.sql
 MySQL
 -----
 
-Export database:
+Export SQL file:
 
 ```bash
 mysqldump -uroot -p database >> database.sql
 ```
 
-Import database:
+Import SQL file:
 
 ```bash
 mysql -uroot -p -Ddatabase < database.sql
