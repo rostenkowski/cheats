@@ -26,6 +26,11 @@ GRANT ALL ON DATABASE project TO project;
 \q
 ```
 
+Import SQL file:
+```bash
+psql -d database < file.sql 
+```
+
 MySQL
 -----
 
