@@ -16,7 +16,9 @@ joe
 $ sudo apt-get install postgresql
 $ sudo su postgres
 $ psql
+CREATE DATABASE joe;
 CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER;
+GRANT ALL ON DATABASE joe TO joe;
 \q
 $ exit
 $ psql  
