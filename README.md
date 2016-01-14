@@ -36,6 +36,10 @@ psql -d database < file.sql
 MySQL
 -----
 
+Reset MySQL root password
+
+https://help.ubuntu.com/community/MysqlPasswordReset
+
 Export SQL file:
 
 ```bash
