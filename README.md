@@ -27,6 +27,11 @@ CREATE DATABASE project;
 GRANT ALL ON DATABASE project TO project;
 \q
 ```
+Export SQL file:
+
+```bash
+pg_dump [dbname]
+```
 
 Import SQL file:
 ```bash
