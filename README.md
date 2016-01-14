@@ -30,7 +30,7 @@ GRANT ALL ON DATABASE project TO project;
 Export SQL file:
 
 ```bash
-pg_dump [dbname]
+pg_dump database > database.sql
 ```
 
 Import SQL file:
