@@ -10,13 +10,13 @@ $ psql
 > CREATE DATABASE joe;
 > CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER LOGIN;
 > GRANT ALL ON DATABASE joe TO joe;
-^D
+> ^D
 $ ^D
 $ psql  
 > CREATE USER project WITH PASSWORD '***' LOGIN;
 > CREATE DATABASE project;
 > GRANT ALL ON DATABASE project TO project;
-^D
+> ^D
 ```
 Export SQL file:
 
