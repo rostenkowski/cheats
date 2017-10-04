@@ -2,28 +2,17 @@ PostgreSQL
 ----------
 
 ```bash
-$ whoami 
-joe
-$ sudo apt-get install postgresql
 $ sudo su postgres
 $ psql
-> CREATE DATABASE joe;
-> CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER LOGIN;
-> GRANT ALL ON DATABASE joe TO joe;
-> ^D
-$ ^D
-$ psql  
-> CREATE USER project WITH PASSWORD '***' LOGIN;
+> CREATE USER user WITH PASSWORD '***' LOGIN;
 > CREATE DATABASE project;
-> GRANT ALL ON DATABASE project TO project;
+> GRANT ALL ON DATABASE project TO user;
 > ^D
 ```
 Export SQL file:
-
 ```bash
 pg_dump database > database.sql
 ```
-
 Import SQL file:
 ```bash
 psql -d database < file.sql 
@@ -31,6 +20,15 @@ psql -d database < file.sql
 
 MySQL
 -----
+
+```bash
+$ mysql -u root -p
+> CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+> CREATE DATABASE project;
+> GRANT ALL PRIVILEGES ON project.* TO 'user'@'localhost';
+> FLUSH PRIVILEGES;
+> ^D
+```
 
 Reset MySQL root password
 ```bash
