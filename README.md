@@ -42,8 +42,9 @@ MySQL
 -----
 
 Reset MySQL root password
-
+```bash
 sudo dpkg-reconfigure mysql-server
+```
 
 Export SQL file:
 
