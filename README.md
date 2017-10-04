@@ -17,12 +17,12 @@ $ sudo apt-get install postgresql
 $ sudo su postgres
 $ psql
 CREATE DATABASE joe;
-CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER;
+CREATE USER joe WITH PASSWORD '***' CREATEDB CREATEUSER LOGIN;
 GRANT ALL ON DATABASE joe TO joe;
 \q
 $ exit
 $ psql  
-CREATE USER project WITH PASSWORD '***';
+CREATE USER project WITH PASSWORD '***' LOGIN;
 CREATE DATABASE project;
 GRANT ALL ON DATABASE project TO project;
 \q
