@@ -1,5 +1,5 @@
-PostgreSQL
-----------
+# PostgreSQL
+
 
 ```bash
 sudo su postgres
@@ -10,23 +10,16 @@ CREATE USER user WITH PASSWORD 'password' LOGIN;
 CREATE DATABASE project;
 GRANT ALL ON DATABASE project TO user;
 ```
-Export SQL file:
-
+## Export `*.sql` file:
 ```bash
-sudo su postgres
 pg_dump database > database.sql
 ```
-
-Import SQL file:
-
+## Import `*.sql` file:
 ```bash
-sudo su postgres
 psql -d database < file.sql 
 ```
 
-MySQL
------
-
+# MySQL
 ```bash
 mysql -u root -p
 ```
@@ -36,20 +29,15 @@ CREATE DATABASE project;
 GRANT ALL PRIVILEGES ON project.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ```
-
-Reset MySQL root password
+## Reset MySQL root password
 ```bash
 sudo dpkg-reconfigure mysql-server
 ```
-
-Export SQL file:
-
+## Export `*.sql` file:
 ```bash
 mysqldump -uroot -p database >> database.sql
 ```
-
-Import SQL file:
-
+## Import `*.sql` file:
 ```bash
 mysql -uroot -p -Ddatabase < database.sql
 ```
