@@ -43,7 +43,7 @@ MySQL
 
 Reset MySQL root password
 
-https://help.ubuntu.com/community/MysqlPasswordReset
+sudo dpkg-reconfigure mysql-server
 
 Export SQL file:
 
