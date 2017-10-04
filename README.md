@@ -10,11 +10,11 @@ CREATE USER user WITH PASSWORD 'password' LOGIN;
 CREATE DATABASE project;
 GRANT ALL ON DATABASE project TO user;
 ```
-## Export `*.sql` file:
+## Export
 ```bash
 pg_dump database > database.sql
 ```
-## Import `*.sql` file:
+## Import
 ```bash
 psql -d database < file.sql 
 ```
@@ -29,15 +29,15 @@ CREATE DATABASE project;
 GRANT ALL PRIVILEGES ON project.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ```
-## Reset MySQL root password
-```bash
-sudo dpkg-reconfigure mysql-server
-```
-## Export `*.sql` file:
+## Export
 ```bash
 mysqldump -uroot -p database >> database.sql
 ```
-## Import `*.sql` file:
+## Import
 ```bash
 mysql -uroot -p -Ddatabase < database.sql
+```
+## Reset root password
+```bash
+sudo dpkg-reconfigure mysql-server
 ```
